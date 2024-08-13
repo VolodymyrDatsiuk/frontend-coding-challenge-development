@@ -1,7 +1,7 @@
 'use client';
 
 import { Toast } from '@/components/Toast';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Toast as ToastElement } from './types';
 import { TOAST_EVENT_NAME } from './toast';
 
