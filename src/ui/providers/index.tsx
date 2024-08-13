@@ -6,7 +6,5 @@ type Props = {
 };
 
 export function Providers({ children }: Props) {
-  return (
-    <ToastProvider>{children}</ToastProvider>
-  );
+  return <ToastProvider>{children}</ToastProvider>;
 }

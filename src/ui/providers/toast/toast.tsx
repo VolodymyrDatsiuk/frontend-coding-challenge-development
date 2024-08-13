@@ -21,7 +21,8 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
     <ToastContext.Provider
       value={{
         renderToast,
-      }}>
+      }}
+    >
       <ToastContainer />
 
       {children}

@@ -36,8 +36,8 @@ export function ChartBlock() {
       }
     };
 
-    fetchChartData();
-  }, []);
+    void fetchChartData();
+  }, [renderToast]);
 
   const handleReset = () => {
     setMin('');
@@ -86,7 +86,8 @@ export function ChartBlock() {
         <div className='flex flex-col pt-4 mx-4 w-100'>
           <button
             onClick={handleReset}
-            className='bg-blue-600 flex justify-center items-center h-10 text-center text-white border focus:outline-none focus:ring-4 font-sm rounded-lg text-sm px-5 py-1.9'>
+            className='bg-blue-600 flex justify-center items-center h-10 text-center text-white border focus:outline-none focus:ring-4 font-sm rounded-lg text-sm px-5 py-1.9'
+          >
             Reset
           </button>
         </div>
